@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="icon" type="image/x-icon" href="/images/lock.png">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="/styles.css">
+
+    <title>Document</title>
+</head>
+<body>
+    <!-- Main landmark containing the application content -->
+    <main class="container">
+        <!-- Header section for the main project title -->
+        <header>
+            <h1>Generate a <br><span class="underline">Random Password</span></h1>
+        </header>
+
+        <!-- Main interactive password section -->
+        <section class="password-display" aria-label="Password Display Area">
+            <input type="text" id="password" placeholder="Password" readonly aria-label="Generated Password" class="password-input">
+            <button type="button" class="copy-btn" aria-label="Copy password to clipboard" id="copy-btn" disabled>
+                <img src="images/copy.png" alt="Copy Icon" class="copy-icon">
+            </button>
+        </section>
+
+        <!-- Action trigger section -->
+        <section class="actions">
+            <button type="button" class="generate-btn" id="generate-btn">
+                <img src="images/generate.png" alt="Generate Icon" class="generate-icon"> Generate Password
+            </button>
+        </section>
+    </main>
+    <div class="notification none" id="notify">
+        <p>Password copied to the clipboard</p>
+    </div>
+    <script src="/scripts.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+/* =========================
+   CSS Reset & Boilerplate
+   ========================= */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --font-family: "Poppins", sans-serif;
+    --font-size-h1: 2.8rem;
+    --font-size-normal: 1.5rem;
+    --font-weight-normal: 400;
+    --font-weight-medium: 500;
+
+    --color-bg: #002333;
+    --color-underline: #328754;
+    --color-btn: #338955;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+    background-color: var(--color-bg);
+    color: #FFF;
+}
+
+h1{
+    font-size: var(--font-size-h1);
+    font-weight: var(--font-weight-medium);
+}
+
+input,
+button{
+    font-family: inherit;
+    letter-spacing: .5px;
+}
+
+
+
+/* ================
+   Design & Layout
+   ================ */
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    width: 90%;
+    max-width: 700px;
+    margin-inline: auto;
+}
+
+.underline{
+    color: var(--color-underline);
+    text-decoration: underline;
+}
+
+.password-display{
+    width: fit-content;
+    display: flex;
+    background-color: #FFF;
+    border-radius: 5px;
+    padding: .5em;
+}
+
+.password-input,
+.copy-btn{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+
+.password-input{
+    padding: 1em;
+}
+
+.copy-btn{
+    cursor: pointer;
+}
+
+.copy-icon{
+    width: 24px;
+}
+
+.generate-btn{
+    background-color: var(--color-btn);
+    display: flex;
+    align-items: center;
+    color: #FFF;
+    padding: 1em;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    gap: .5em;
+}
+
+.generate-icon{
+    width: 24px;
+}
+
+.generate-btn:hover,
+.generate-btn:focus{
+    transform: scale(1.02);
+    transition: .1s cubic-bezier(.17,.67,.83,.67);
+}
+
+.copy-btn:disabled,
+.generate-btn:disabled{
+    cursor: not-allowed;
+    transform: none;
+}
+
+/* Notification */
+
+.notification{
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #FFF;
+    color: #002333;
+    padding: 1em;
+    border-radius: 2px;
+    margin: 1em;
+}
+
+.none{
+    display: none;
+}
+
+
+
