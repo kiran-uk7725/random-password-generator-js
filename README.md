@@ -24,8 +24,9 @@ A responsive, lightweight web application built using HTML, CSS, and Vanilla Jav
 ├── index.html
 ├── style.css
 └── README.md
+```
 
-🚀 How to Run
+## 🚀 How to Run
 
 1.Clone the repository:
 git clone [https://github.com/your-username/random-password-generator-js.git](https://github.com/your-username/random-password-generator-js.git)
@@ -35,5 +36,5 @@ cd random-password-generator-js
 
 3.Open index.html in your favorite browser or use Live Server in Visual Studio Code.
 
-📜 License
+### 📜 License
 This project is open-source and available under the MIT License.
