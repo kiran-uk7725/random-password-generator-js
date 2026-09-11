@@ -20,8 +20,10 @@ A responsive, lightweight web application built using HTML, CSS, and Vanilla Jav
 ```text
 ├── images/
 │   ├── copy.png
+│   ├── lock.png
 │   └── generate.png
 ├── index.html
+├── scripts.js
 ├── style.css
 └── README.md
 ```
